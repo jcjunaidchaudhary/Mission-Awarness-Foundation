@@ -1,0 +1,20 @@
+.owl-prev{
+    left: -30px;
+}
+
+.owl-next{
+    right: -30px;
+}
+
+.owl-prev,.owl-next{
+    position:absolute;
+    top: 70px;
+}
+
+.owl-prev span, .owl-next span{
+    font-size: 80px;
+    color: darkslategray;
+}
+
+.bg-bc {
+background-color: lightgrey;}
