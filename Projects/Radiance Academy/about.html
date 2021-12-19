@@ -6,16 +6,121 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Welcome to iCoder. A blog for coding enthusiasts">
-    
+
+
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+    <!-- CSS From File -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+    
+
+
+
+.text {
+    color: #181615;
+    text-align: center
+}
+.desc{
+    font-size: 19px;
+}
+.jumbotron {
+    margin-bottom: -7.5rem;
+    background-color: #e9ecef;
+   
+}
+
+.folded-corner:hover .text h3 {
+    visibility: visible;
+    color:white;
+}
+.folded-corner:hover .text {
+    visibility: visible;
+    color:white;
+}
+
+.Services-tab {
+    margin-top: 80px
+}
+
+.folded-corner {
+    padding: 60px 30px;
+    position: relative;
+    font-size: 100%;
+    text-decoration: none;
+    color: #999;
+    background: transparent;
+    transition: all ease .5s;
+    border: 1px solid #d1cdcb
+}
+
+.folded-corner:hover {
+    background-color:  #ff3300;
+}
+
+.folded-corner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 0 0px 0px 0;
+    border-color: #ddd #000;
+    transition: all ease .3s
+}
+
+.folded-corner:hover:before {
+    background-color: #09f109;
+    border-width: 0 50px 50px 0;
+    border-color: #eee #000
+}
+
+.service_tab_1 {
+    background-color: rgb(241, 234, 234)
+}
+
+.service_tab_1:hover .fa-icon-image {
+    color: white;
+    transform: scale(1.5)
+}
+
+.fa-icon-image {
+    color: dodgerblue;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size-adjust: none;
+    font-stretch: normal;
+    
+    text-rendering: auto;
+    transition: all .65s linear 0s;
+    text-align: center;
+    transition: all 1s cubic-bezier(.99, .82, .11, 1.41)
+}
+    </style>
 
     <title>Radiance Academy</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a _ngcontent-serverapp-c51="" routerlink="/" class="navbar-brand" href="/">
+            <img _ngcontent-serverapp-c51="" height="45px" width="50px" src="static/logo.png" alt="Radiance Academy"
+                class="brandLogo"></a>
         <a class="navbar-brand" href="#">Radiance Academy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,123 +130,252 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/about.html">About</a>
-                </li>
-
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Courses
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Neet</a>
-                        <a class="dropdown-item" href="#">JEE(Main)</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">SSC</a>
-                        <a class="dropdown-item" href="#">HSC</a>
-                        <a class="dropdown-item" href="#">Others</a>
-                    </div>
+                    <a class="nav-link" href="/about.html">About Us</a>
                 </li>
 
                 <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="/neet.html" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Results
+                        Courses Offered
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Neet</a>
-                        <a class="dropdown-item" href="#">JEE(Main)</a>
+                        <a class="dropdown-item" href="/neet.html">Neet</a>
+                        <a class="dropdown-item" href="/jee.html">JEE(Main)</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">SSC</a>
-                        <a class="dropdown-item" href="#">HSC</a>
-                        <a class="dropdown-item" href="#">Others</a>
+                        <a class="dropdown-item" href="/mhcet.html">MH-CET</a>
+                        <a class="dropdown-item" href="/ssc&hsc.html">HSC & SSC</a>
                     </div>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="/unit.html">Our Unit Members</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="/success.html">Success Stories</a>
                 </li>
 
                 <li class="nav-item active">
                     <a class="nav-link" href="/contact.html">Contact Us</a>
                 </li>
 
+                <li class="nav-item active">
+                    <a class="nav-link" href="/download.html">Download</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="/gallery.html">Gallery</a>
+                </li>
+
+
             </ul>
             <div class="mx-2">
-                <button class="btn btn-primary " data-toggle="modal" data-target="#enquiryModal">Post Your Enquiry</button>
+                <button class="btn " data-toggle="modal" data-target="#enquiryModal">Post Your
+                    Enquiry</button>
             </div>
         </div>
     </nav>
 
-    <div class="container marketing my-4">
-        <!-- START THE FEATURETTES -->
-    
-        <div class="row featurette d-flex justify-content-center">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
-                        mind.</span></h2>
-                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
-                    prose here.</p>
-            </div>
-            <div class="col-md-5">
-                <img src="https://source.unsplash.com/400x400/?class,students" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                height="500" alt="">
-    
+
+    <!-- Enquiry Modal -->
+    <div class="modal fade" id="enquiryModal" tabindex="-1" role="dialog" aria-labelledby="enquiryModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ask</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Select your Query</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option selected>Neet</option>
+                                <option>JEE</option>
+                                <option>SSC or HSC</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Tell us about yourself</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Tell us about your concern</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-4">Are you a Student?</div>
+                            <div class="col-sm-8">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        Yes
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-4">Are You Teacher?</div>
+                            <div class="col-sm-8">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        Yes
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
-    
-        <hr class="featurette-divider">
-    
-        <div class="row featurette d-flex justify-content-center">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
-                        yourself.</span></h2>
-                <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how
-                    this layout would work with some actual real-world content in place.</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-                <img src="https://source.unsplash.com/400x400/?class,students" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                height="500" alt="">
-    
-            </div>
-        </div>
-    
-        <hr class="featurette-divider">
-    
-        <div class="row featurette d-flex justify-content-center">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
-                    intended to be actually read, simply here to give you a better view of what this would look like
-                    with some actual content. Your content.</p>
-            </div>
-            <div class="col-md-5">
-                <img src="https://source.unsplash.com/400x400/?class,students" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                height="500" alt="">
-    
-            </div>
-        </div>
-    
-        <hr class="featurette-divider">
-    
-        <!-- /END THE FEATURETTES -->
-    
-    </div> 
+    </div>
+
   
-    <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>© 2021-2022 @jc_junaid_chaudhary · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-      </footer>
+    <main role="main">
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+          <div class="container mt-4">
+            <h1 class="display-3">Hello, world!</h1>
+            <p class="desc" >This is a template Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos quos, tenetur nihil, sapiente quibusdam voluptas esse illo illum nulla vitae excepturi possimus velit optio ut harum alias natus ducimus. Et!
+            Earum, enim voluptatibus molestias amet harum sint fugit, ipsum atque ratione saepe veniam commodi aut officiis debitis ea minima minus? Laudantium at laborum obcaecati cupiditate nisi, modi ex totam soluta. for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+            <!-- <p><a class="btn btn-lg" href="#" role="button">Learn more »</a></p> -->
+          </div>
+        </div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-4 Services-tab item">
+                    <div class="folded-corner service_tab_1">
+                        <div class="text"> <i class="fa fa-comment fa-5x fa-icon-image"></i>
+                            <p class="item-title">
+                                <h3 class="NEET_title ">Message</h3>
+                            </p><!-- /.item-title -->
+                            <p class="desc" > This is an amazing set of animated accordions based completely on CSS. They come oriented both vertically and horizontally in order to fit properly in your project. In order to see the slides, </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 Services-tab item">
+                    <div class="folded-corner service_tab_1">
+                        <div class="text"> <i class="fa fa-eye fa-5x fa-icon-image"></i>
+                            <p class="item-title">
+                                <h3  class="NEET_title ">Vision</h3>
+                            </p><!-- /.item-title -->
+                            <p class="desc" > This is an amazing set of animated accordions based completely on CSS. They come oriented both vertically and horizontally in order to fit properly in your project. In order to see the slides, </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 Services-tab item">
+                    <div class="folded-corner service_tab_1">
+                        <div class="text"> <i class="fa fa-bullseye fa-5x fa-icon-image"></i>
+                            <p class="item-title">
+                                <h3 class="NEET_title ">Mission</h3>
+                            </p>
+                            <p class="desc" > This is an amazing set of animated accordions based completely on CSS. They come oriented both vertically and horizontally in order to fit properly in your project. In order to see the slides, </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+  
+      </main>
+    
+
+
+    <!-- footer -->
+
+    <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
+        data-abc="true"></a>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <img src="static/logo.png">
+            <h3>Radiance <span>Academy</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="#">Blog</a>
+                |
+                <a href="#">About</a>
+                |
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">© 2019 Eduonix Learning Solutions Pvt. Ltd.</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>309 - Rupa Solitaire,
+                        Bldg. No. A - 1, Sector - 1</span>
+                    Mahape, Navi Mumbai - 400710</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 22-27782183</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@eduonix.com">support@eduonix.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                We offer training and skill building courses across Technology, Design, Management, Science and
+                Humanities.
+            </p>
+
+            <div class="footer-icons">
+                <p class="footerHead">Join Us</p>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+    <script src="js/scroll.js"></script>
+
 </body>
 
 </html>
