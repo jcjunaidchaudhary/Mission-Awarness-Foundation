@@ -74,7 +74,7 @@ body {
 
 
 .owl-carousel .owl-item img {
-    width: 250px !important;
+    width: 320px !important;
     height: auto;
     border-radius: 0;
     object-fit: cover
