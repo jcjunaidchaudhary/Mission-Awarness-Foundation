@@ -36,8 +36,8 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-#           path: '.'
-          publish_dir: ./Projects/Radiance Academy/
+          path: 'Projects/Radiance Academy/'
+          # publish_dir: ./Projects/Radiance Academy/
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
